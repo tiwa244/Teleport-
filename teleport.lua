@@ -12,7 +12,7 @@ passwordFrame.Parent = passwordGui
 local passwordBox = Instance.new("TextBox")
 passwordBox.Size = UDim2.new(0.8, 0, 0, 40)
 passwordBox.Position = UDim2.new(0.1, 0, 0.3, 0)
-passwordBox.PlaceholderText = "Enter Password"
+passwordBox.PlaceholderText = "Password is 123"
 passwordBox.Text = ""
 passwordBox.Parent = passwordFrame
 local submitButton = Instance.new("TextButton")
@@ -21,7 +21,7 @@ submitButton.Position = UDim2.new(0.25, 0, 0.65, 0)
 submitButton.Text = "Submit"
 submitButton.Parent = passwordFrame
 submitButton.MouseButton1Click:Connect(function()
-	if passwordBox.Text == "hhh111" then
+	if passwordBox.Text == "123" then
 		passwordGui:Destroy()
 		
 		-- The rest of your original GUI setup starts here:
